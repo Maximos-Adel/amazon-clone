@@ -14,17 +14,17 @@ function Home() {
         <div className="home__row">
           <Product
             id="1"
-            title="The Lean Startup: How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses"
+            title="The Lean Startup: How Constant Innovation Creates Radically Successful Businesses Paperback"
             price={29.99}
             rating={3}
             img="https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg"
           />
           <Product
             id="2"
-            title="Kenwood kMix Stand Mixer for Baking with K-beater, Dough Hook and Whisk, 5 Litre Glass Bowl, Removable Splash Guard"
+            title="Kenwood kMix Stand Mixer for Baking, Stylish Kitchen Mixer with K-beater, 5 Litre Glass Bowl"
             price={239.99}
             rating={4}
-            img="https://m.media-amazon.com/images/I/61etD4-IrPL._AC_SS350_.jpg"
+            img="https://images-na.ssl-images-amazon.com/images/I/81O%2BGNdkzKL._AC_SX450_.jpg"
           />
         </div>
         <div className="home__row">
@@ -37,7 +37,7 @@ function Home() {
           />
           <Product
             id="4"
-            title="Echo Studio – High-fidelity smart speaker – Alexa smart home starter kit"
+            title="Amazon Echo (3rd generation) | Smart speaker with Alexa, Charcoal Fabric"
             price={98.99}
             rating={2}
             img="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
@@ -53,7 +53,7 @@ function Home() {
         <div className="home__row">
           <Product
             id="6"
-            title="Samsung 49-Inch CHG90 144Hz Curved Gaming Monitor (LC49HG90DMNXZA) – Super Ultrawide Screen QLED Computer Monitor, 3840 x 1080p Resolution, 1ms Response, FreeSync 2 with H"
+            title="Samsung LC49RG90SSUXEN 49' Curved LED Gaming Monitor - Super Ultra Wide Dual WQHD 5120 x 1440"
             price={1094.99}
             rating={4}
             img="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
