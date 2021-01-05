@@ -2,6 +2,9 @@ import React from "react";
 import "./Product.css";
 import StarIcon from "@material-ui/icons/Star";
 import { useStateValue } from "./../StateProvider";
+import Rating from "@material-ui/lab/Rating";
+
+import Box from "@material-ui/core/Box";
 
 function Product({ id, title, price, rating, img }) {
   const [state, dispatch] = useStateValue();
@@ -26,13 +29,15 @@ function Product({ id, title, price, rating, img }) {
           <small>$</small>
           <strong>{price}</strong>
         </p>
-        <div className="product__rating">
+        {/* <div className="product__rating">
           {Array(rating)
             .fill()
             .map((_, i) => (
               <StarIcon className="starIcon" fontSize="small" />
             ))}
-        </div>
+        </div> */}
+
+        <Rating name="read-only" value={rating} readOnly size="small" />
       </div>
 
       <img src={img} alt="" />
