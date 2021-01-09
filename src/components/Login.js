@@ -7,6 +7,7 @@ function Login() {
   const history = useHistory();
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [name, setName] = useState("");
 
   const signIn = (e) => {
     e.preventDefault();
@@ -27,9 +28,17 @@ function Login() {
       .then((auth) => {
         // it successfully created a new user with email and password
         if (auth) {
-          history.push("/");
+          // history.push("/");
+          return (
+            alert("successfully registered"),
+            // set name for user
+            auth.user.updateProfile({
+              displayName: name,
+            })
+          );
         }
       })
+
       .catch((error) => alert(error.message));
   };
 
@@ -47,6 +56,12 @@ function Login() {
         <h1>Sign-in</h1>
 
         <form>
+          <h5>Name</h5>
+          <input
+            type="text"
+            value={name}
+            onChange={(e) => setName(e.target.value)}
+          />
           <h5>E-mail</h5>
           <input
             type="text"

@@ -1,7 +1,8 @@
 import React from "react";
 import "./CheckoutProduct.css";
 import { useStateValue } from "./../StateProvider";
-import StarIcon from "@material-ui/icons/Star";
+// import StarIcon from "@material-ui/icons/Star";
+import Rating from "@material-ui/lab/Rating";
 
 function CheckoutProduct({ id, img, title, price, rating, hideButton }) {
   const [{ basket }, dispatch] = useStateValue();
@@ -24,13 +25,15 @@ function CheckoutProduct({ id, img, title, price, rating, hideButton }) {
           <small>$</small>
           <strong>{price}</strong>
         </p>
-        <div className="checkoutProduct__rating">
+        {/* <div className="checkoutProduct__rating">
           {Array(rating)
             .fill()
             .map((_, i) => (
               <StarIcon className="starIcon" fontSize="small" />
             ))}
-        </div>
+        </div> */}
+
+        <Rating name="read-only" value={rating} readOnly size="small" />
         {!hideButton && (
           <button onClick={removeFromBasket}>Remove from Basket</button>
         )}

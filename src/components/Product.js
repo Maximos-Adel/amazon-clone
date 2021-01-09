@@ -4,8 +4,6 @@ import StarIcon from "@material-ui/icons/Star";
 import { useStateValue } from "./../StateProvider";
 import Rating from "@material-ui/lab/Rating";
 
-import Box from "@material-ui/core/Box";
-
 function Product({ id, title, price, rating, img }) {
   const [state, dispatch] = useStateValue();
 
@@ -36,7 +34,6 @@ function Product({ id, title, price, rating, img }) {
               <StarIcon className="starIcon" fontSize="small" />
             ))}
         </div> */}
-
         <Rating name="read-only" value={rating} readOnly size="small" />
       </div>
 
