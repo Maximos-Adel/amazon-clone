@@ -48,8 +48,8 @@ function App() {
       <div className="app">
         <Switch>
           <Route path="/orders">
-            <Header />
-            <Orders />
+            {/* <Header /> */}
+            {/* <Orders /> */}
           </Route>
           <Route path="/login">
             <Login />
